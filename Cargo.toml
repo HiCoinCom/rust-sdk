@@ -23,6 +23,9 @@ base64 = "0.21"
 sha2 = { version = "0.10", features = ["oid"] }
 md-5 = "0.10"
 
+# 锁定 base64ct 版本以兼容 Cargo 1.80.x (避免 edition2024 问题)
+base64ct = "=1.6.0"
+
 # Async runtime
 tokio = { version = "1", features = ["full"], optional = true }
 
